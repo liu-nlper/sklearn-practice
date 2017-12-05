@@ -34,3 +34,6 @@ new_doc = "The generation of random xxx"
 new_doc_count = count_vec.transform([new_doc])
 new_doc_tfidf = tfidf_vec.transform(new_doc_count)
 print(new_doc_tfidf)
+
+# 转为稠密矩阵
+new_doc_tfidf.toarray()
