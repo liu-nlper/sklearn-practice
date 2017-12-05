@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 """
-    用bag of words表示文档
+    用bag of words表示文档，CountVectorizer类
 """
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
