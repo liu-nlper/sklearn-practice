@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 """
-    用tf-idf表示文档，TfidfTransformer类
+    用tf表示文档，CountVectorizer类
 """
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer
