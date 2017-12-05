@@ -21,12 +21,15 @@ stop_words = ['a', 'of', 'for']
 # ngram_range控制n-gram的n，例如ngram_range=(1,2)即表示抽取uni-gram和bi-gram特征
 # max_features控制词表的大小，若不为空，则按照词频进行排序后在作截取
 count_vec = CountVectorizer(
-    tokenizer=word_tokenize, stop_words=stop_words, max_features=100, ngram_range=(1, 2))
+    tokenizer=word_tokenize, stop_words=stop_words, max_features=100, ngram_range=(1, 3))
 count_vec.fit(documents)
+# 或者使用fit_transform
+# sparse_matrix = count_vec.fit_transform(documents)
 
 # count_vec对应的字典
 count_vec.vocabulary_
 print(len(count_vec.vocabulary_))
+print(count_vec.vocabulary_['trees'])  # 'trees'对应的id
 
 # 稀疏矩阵
 sparse_matrix = count_vec.transform(documents)
