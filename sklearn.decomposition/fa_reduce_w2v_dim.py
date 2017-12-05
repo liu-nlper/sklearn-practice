@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 """
-    利用PCA算法降低词向量的维度
+    利用Factor Analysis(FA)算法降低词向量的维度
 """
 
 import numpy as np
 from time import time
-from sklearn.decomposition import PCA
+from sklearn.decomposition import FactorAnalysis
 from gensim.models.keyedvectors import KeyedVectors
 
 
@@ -22,10 +22,10 @@ for i, word in enumerate(words):
     word_matrix[i, :] = word_vectors[word]
 
 # 利用pca降维词向量
-print('利用pca算法降维...')
+print('利用fa算法降维...')
 t0 = time()
 new_word_dim = 32
-word_matrix_post = PCA(new_word_dim).fit_transform(word_matrix)
+word_matrix_post = FactorAnalysis(new_word_dim).fit_transform(word_matrix)
 print('耗时: %.1fs' % (time()-t0))
 
 # 降维后的词向量写入文件
