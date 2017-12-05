@@ -8,7 +8,7 @@ sklearn.datasets
 降维算法的使用，利用降维算法对预训练的词向量进行降维，并验证降维的效果。
 
 ## 3. 特征抽取(sklearn.feature_extraction)
-降维算法的使用，利用降维算法对预训练的词向量进行降维，并验证降维的效果。
+特征抽取模块的使用。
 
 ## 4. 特征选择(sklearn.feature_selection)
 sklearn.feature_selection
