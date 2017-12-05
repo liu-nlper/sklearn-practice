@@ -11,4 +11,4 @@ sklearn.datasets
 特征抽取模块的使用。
 
 ## 4. 特征选择(sklearn.feature_selection)
-sklearn.feature_selection
+特征选择模块的使用。
