@@ -15,3 +15,6 @@ sklearn学习，持续更新...
 
 ## 5. 特征选择
 [`sklearn.feature_selection`](https://github.com/liu-nlper/sklearn-practice/tree/master/sklearn.feature_selection)，特征选择模块的使用。
+
+## 6. 分类算法
+[`sklearn.classification`](https://github.com/liu-nlper/sklearn-practice/tree/master/sklearn.classification)，分类算法在文本分类任务上的使用。
