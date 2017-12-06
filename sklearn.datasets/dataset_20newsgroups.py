@@ -24,4 +24,7 @@ print("%d categories" % len(dataset.target_names))
 documents = dataset.data
 
 # list of str，每个label用一个字符串表示
+labels = dataset.target_names
+
+# list of int，每个label用一个数字
 labels = dataset.target
