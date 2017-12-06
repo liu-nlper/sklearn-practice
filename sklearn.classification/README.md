@@ -11,3 +11,9 @@
 
 - C: 惩罚系数，即对误差的容忍度。C越大，说明越不能容忍错误，越容易过拟合；C越小，越容易欠拟合。
 - gamma: gamma是选择RBF函数作为kernel后，该函数自带的一个参数。隐含地决定了数据映射到新的特征空间后的分布，gamma越大，支持向量越少，gamma值越小，支持向量越多。支持向量的个数影响训练与预测的速度。
+
+### 3. KNN
+
+[`knn.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/knn.py)，利用`knn`算法进行文本分类。
+
+可选用的算法包括：`ball_tree`、`kd_tree`和`brute`，该算法同样可用于相似`文档检索`任务。
