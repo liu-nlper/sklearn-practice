@@ -4,7 +4,7 @@
 
 ### 1. 标准化
 
-`std_mean_scaling.py`, Standardization, or mean removal and variance scaling.
+[`std_mean_scaling.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/std_mean_scaling.py), Standardization, or mean removal and variance scaling.
 
 #### 1.1 StandardScaler
 
@@ -16,11 +16,11 @@
 
 ### 2. QuantileTransformer
 
-`non_linear_transformation.py`，利用`QuantileTransformer`类，将数据转换到[0, 1]之间的均匀分布（也可以通过将`output_distribution`参数设置为`normal`，转换为正态分布）。
+[`non_linear_transformation.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/non_linear_transformation.py)，利用`QuantileTransformer`类，将数据转换到[0, 1]之间的均匀分布（也可以通过将`output_distribution`参数设置为`normal`，转换为正态分布）。
 
 ### 3. Normalization
 
-利用`Normalizer`类，对数据进行正则化，支持`l1`,`l2`和`max`，默认为`l2`。
+[`normalization.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/normalization.py)利用`Normalizer`类，对数据进行正则化，支持`l1`,`l2`和`max`，默认为`l2`。
 
 计算方法为：先计算每个样本的p范数，然后对该样本中的每个元素除以该范数。
 
@@ -31,12 +31,13 @@
 则normalized之后为: \[1./p, -1./p, 2./p\] = \[0.40824829, -0.40824829, 0.81649658\]
 
 ### 4. Binarization
-`binarization.py`，利用`Binarizer`类，将数据二值化。
+[`binarization.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/binarization.py)，利用`Binarizer`类，将数据二值化。
 
 通过`threshold`参数控制特征的取值，即小于等于`threshold`被转换为0，大于`threshold`的为1.
 
 ### 5. 处理分类特征
-`categorical_features.py`，利用`OneHotEncoder`类处理分类特征 - `categorical_features.py`。
+
+[`categorical_features.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/categorical_features.py)，利用`OneHotEncoder`类处理分类特征 - `categorical_features.py`。
 
 需要注意的是，若某个特征编号超出了训练数据的取值范围，则会出现以下错误:
 
@@ -52,7 +53,7 @@
 
 ### 6. 处理缺失值
 
-`missing_values.py`，利用`Imputer`类处理缺失值。
+[`missing_values.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/missing_values.py)，利用`Imputer`类处理缺失值。
 
 
  用根据`strategy`缺失值，`strategy`共有3种取值，分别为:
@@ -63,7 +64,7 @@
 
 ### 7. 处理多项式特征
 
-`polynomial_features.py`，`PolynomialFeatures`类中的`degree`参数控制多项式系数，若设置为2，则特征转换方式为:
+[`polynomial_features.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/polynomial_features.py)，`PolynomialFeatures`类中的`degree`参数控制多项式系数，若设置为2，则特征转换方式为:
 
     (x1, x2) -> (1, x1, x2, x1^2, x1*x2, x2^2)
 
@@ -73,5 +74,5 @@
 
 ### 8. 用户自定义处理方式
 
-`function_transformer.py`，用户自定义预处理方式。
+[`function_transformer.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.preprocessing/function_transformer.py)，用户自定义预处理方式。
 
