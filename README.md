@@ -7,11 +7,11 @@ sklearn.datasets
 ## 2. 预处理方法(sklearn.preprocessing)
 一些预处理方法，包括：标准化、正则化、处理缺失值、处理分类特征和处理多项式特征等。
 
-## 2. 降维算法(sklearn.decomposition)
+## 3. 降维算法(sklearn.decomposition)
 降维算法的使用，利用降维算法对预训练的词向量进行降维，并验证降维的效果。
 
-## 3. 特征抽取(sklearn.feature_extraction)
+## 4. 特征抽取(sklearn.feature_extraction)
 特征抽取模块的使用。
 
-## 4. 特征选择(sklearn.feature_selection)
+## 5. 特征选择(sklearn.feature_selection)
 特征选择模块的使用。
