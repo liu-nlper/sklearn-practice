@@ -10,8 +10,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.datasets import fetch_20newsgroups
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
+from sklearn import svm
 
 
 # 加载数据集。四个类别共3387个实例
@@ -42,9 +42,9 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, random_state=42, stratify=y, test_size=0.2)
 
 # 建立模型
-lr_model = LogisticRegression(
-    solver='saga', multi_class='multinomial', penalty='l2',
-    fit_intercept=True, max_iter=5, random_state=42)
+lr_model = svm.SVC(C=20, gamma=1, decision_function_shape='ovo', max_iter=-1, kernel='rbf', verbose=True)
+# lr_model = svm.NuSVC()  # non-linear svm
+# lr_model = svm.LinearSVC()  # 使用线性svm时，测试集结果为：0.930678
 
 # 训练
 print('训练模型...')
@@ -52,9 +52,12 @@ lr_model.fit(X_train, y_train)
 
 # 预测
 print('预测...')
-y_pred = lr_model.predict(X_test)
+y_pred_train = lr_model.predict(X_train)
+y_pred_test = lr_model.predict(X_test)
 
 # 计算acc
-acc = np.sum(y_test == y_pred) / y_test.shape[0]
+acc_train = np.sum(y_train == y_pred_train) / y_train.shape[0]
+acc_test = np.sum(y_test == y_pred_test) / y_test.shape[0]
 
-print('acc: %f' % acc)  # 0.912979
+print('acc of train: %f' % acc_train)  # 0.999631
+print('acc of test: %f' % acc_test)  # 0.923304
