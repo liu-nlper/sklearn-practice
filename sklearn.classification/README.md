@@ -22,12 +22,26 @@
 
 [`naive_bayes.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/naive_bayes.py)，朴素贝叶斯算法在文本分类任务上的应用，参考文档：[`sklearn文档`](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB)
 
-#### 5. Ensemble methods
+### 5. Ensemble methods
 
 集成算法在文本分类上的应用。
 
-##### 5.1 Random Forests
+#### 5.1 Random Forests
 
 [`random_forests.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/random_forests.py)，参考文档：[`sklearn文档`](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier)
 
 **注**：值得注意的是，rf可以对特征的重要程度进行排序，可以用作特征选择。
+
+### 6. Neural network models
+
+#### 6.1 MLPClassifier
+
+多层感知器在文本分类上的应用，参考文档：[`sklearn文档`](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier)。
+
+##### 6.1.1 [`mlp_classifier.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/mlp_classifier.py)
+
+mlp + tf-idf。
+
+##### 6.1.2 [`mlp_classifier_lda.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/mlp_classifier_lda.py)
+
+mlp + tf-idf + lda。
