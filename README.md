@@ -2,7 +2,7 @@
 sklearn学习，持续更新...
 
 ## 1. 数据集
-`sklearn.datasets`，sklearn.datasets
+[`sklearn.datasets`](https://github.com/liu-nlper/sklearn-practice/tree/master/sklearn.datasets)，sklearn.datasets
 
 ## 2. 预处理方法
 `sklearn.preprocessing`，一些预处理方法，包括：标准化、正则化、处理缺失值、处理分类特征和处理多项式特征等。
