@@ -32,6 +32,10 @@
 
 **注**：值得注意的是，rf可以对特征的重要程度进行排序，可以用作特征选择。
 
+#### 5.2 AdaBoost
+
+[`ada_boost.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/ada_boost.py)，参考文档：[`sklearn文档`](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html#sklearn.ensemble.AdaBoostClassifier)
+
 ### 6. Neural network models
 
 #### 6.1 MLPClassifier
