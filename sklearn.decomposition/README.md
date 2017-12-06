@@ -1,6 +1,9 @@
 ## 降维算法的使用
 对预训练的词向量进行降维，`./data/wordvectors.txt`共包含词1w，词向量的维度为50。
 以下实验均在`8核i7`处理器上进行。
+
+官方文档: [http://scikit-learn.org/stable/modules/decomposition.html#decompositions](http://scikit-learn.org/stable/modules/decomposition.html#decompositions "http://scikit-learn.org/stable/modules/decomposition.html#decompositions")
+
 ### 1. pca_reduce_w2v_dim.py (pca降维算法)
 以`苏州`为测试用词，分别输出降维前和降维之后与`苏州`语义最相近的10个词，可见降维效果比较好，降维之后找出的依然是与城市相关的词，降维耗时`0.4s`。
 #### 降维前
