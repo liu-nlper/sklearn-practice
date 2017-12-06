@@ -4,7 +4,7 @@
 
 官方文档: [http://scikit-learn.org/stable/modules/decomposition.html#decompositions](http://scikit-learn.org/stable/modules/decomposition.html#decompositions "http://scikit-learn.org/stable/modules/decomposition.html#decompositions")
 
-### 1. pca_reduce_w2v_dim.py (pca降维算法)
+### 1. [`pca_reduce_w2v_dim.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.decomposition/pca_reduce_w2v_dim.py) (pca降维算法)
 以`苏州`为测试用词，分别输出降维前和降维之后与`苏州`语义最相近的10个词，可见降维效果比较好，降维之后找出的依然是与城市相关的词，降维耗时`0.4s`。
 #### 降维前
     降维前，词向量维度为50，与`苏州`最相近的10个词:
@@ -30,7 +30,7 @@
    	7	宋城	0.669389
    	8	中山市	0.667284
    	9	大观园	0.659511
-### 2. fa_reduce_w2v_dim.py (Factor Analysis降维算法)
+### 2. [`fa_reduce_w2v_dim.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.decomposition/fa_reduce_w2v_dim.py) (Factor Analysis降维算法)
 同样以`苏州`为测试用词，分别输出降维前和降维之后与`苏州`语义最相近的10个词，降维耗时`3.3s`。
 #### 降维前
     降维前，词向量维度为50，与`苏州`最相近的10个词:
