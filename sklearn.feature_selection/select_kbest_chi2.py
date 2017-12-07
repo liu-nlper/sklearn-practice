@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 """
-    利用logistic回归处理多类别文本分类任务。
+    计算非负特征与类别之间的卡方统计量，并在文本分类任务上进行检验。
 """
 
 import numpy as np
