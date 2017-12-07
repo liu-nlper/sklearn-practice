@@ -28,11 +28,11 @@ nb_classes = np.unique(y).shape[0]
 print('将数据映射到lda向量空间...')
 num_topics = 100
 pipeline_tfidf = Pipeline(steps=[
-    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.6, min_df=0.01)),
+    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.4, min_df=0.01)),
     ('tfidf', TfidfTransformer()),
 ])
 pipeline_lda = Pipeline(steps=[
-    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.6, min_df=0.01)),
+    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.4, min_df=0.01)),
     ('tfidf', TfidfTransformer()),
     ('lda', LatentDirichletAllocation(n_components=num_topics)),
 ])

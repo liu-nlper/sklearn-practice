@@ -31,7 +31,7 @@ nb_classes = np.unique(y).shape[0]
 # 将训练数据映射到tf-idf空间
 print('将数据映射到tf-idf向量空间...')
 pipeline = Pipeline(steps=[
-    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.6, min_df=0.01)),
+    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.4, min_df=0.01)),
     ('tfidf', TfidfTransformer()),
 ])
 X = pipeline.fit_transform(X_)
@@ -57,4 +57,4 @@ y_pred = lr_model.predict(X_test)
 # 计算acc
 acc = np.sum(y_test == y_pred) / y_test.shape[0]
 
-print('acc: %f' % acc)  # 0.912979
+print('acc: %f' % acc)  # 0.927729

@@ -31,7 +31,7 @@ nb_classes = np.unique(y).shape[0]
 # 将训练数据映射到tf-idf空间
 print('将数据映射到tf-idf向量空间...')
 pipeline = Pipeline(steps=[
-    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.6, min_df=0.01)),
+    ('vect', CountVectorizer(stop_words='english', tokenizer=word_tokenize, max_df=0.4, min_df=0.01)),
     ('tfidf', TfidfTransformer()),
 ])
 X = pipeline.fit_transform(X_).toarray()
@@ -57,5 +57,5 @@ y_pred_test = neigh_model.predict(X_test)
 acc_train = np.sum(y_train == y_pred_train) / y_train.shape[0]
 acc_test = np.sum(y_test == y_pred_test) / y_test.shape[0]
 
-print('acc of train: %f' % acc_train)  # 0.852713
-print('acc of test: %f' % acc_test)  # 0.825959
+print('acc of train: %f' % acc_train)  # 0.876707
+print('acc of test: %f' % acc_test)  # 0.858407

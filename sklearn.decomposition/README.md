@@ -1,6 +1,7 @@
 ## 降维算法的使用
-对预训练的词向量进行降维，`./data/wordvectors.txt`共包含词1w，词向量的维度为50。
+- 对预训练的词向量进行降维：`./data/wordvectors.txt`共包含词1w，词向量的维度为50。
 以下实验均在`8核i7`处理器上进行。
+- 对特征向量进行降维：用降维算法对特征进行降维，并利用`logistic回归`验证降维效果。
 
 官方文档: [http://scikit-learn.org/stable/modules/decomposition.html#decompositions](http://scikit-learn.org/stable/modules/decomposition.html#decompositions "http://scikit-learn.org/stable/modules/decomposition.html#decompositions")
 
@@ -56,3 +57,9 @@
     7	玉泉营	0.656201
     8	玉渊潭	0.656028
     9	盐城	0.649126
+
+### 2. [`logistic_regression.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.decomposition/logistic_regression.py)
+
+用降维算法对特征进行降维，并利用`logistic回归`验证降维效果。
+
+降维之前特征维度为`2086`，`acc=0.927729`，降维之后维度为`512`，`acc=0.926254`。

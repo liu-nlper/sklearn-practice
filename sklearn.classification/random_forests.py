@@ -58,7 +58,7 @@ acc_train = np.sum(y_train == y_pred_train) / y_train.shape[0]
 acc_test = np.sum(y_test == y_pred_test) / y_test.shape[0]
 
 print('acc of train: %f' % acc_train)  # 0.960133
-print('acc of test: %f' % acc_test)  # 0.890855
+print('acc of test: %f' % acc_test)  # 0.895280
 
 # 值得注意的是，rf可以对特征的重要程度进行排序，可以用作特征选择
 print(len(rnf_model.feature_importances_))

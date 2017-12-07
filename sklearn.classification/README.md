@@ -36,7 +36,7 @@
 
 [`ada_boost.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/ada_boost.py)，参考文档：[`sklearn文档`](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html#sklearn.ensemble.AdaBoostClassifier)
 
-### 6. Neural network models
+### 6. Neural Network
 
 #### 6.1 MLPClassifier
 
@@ -44,8 +44,8 @@
 
 ##### 6.1.1 [`mlp_classifier.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/mlp_classifier.py)
 
-mlp + tf-idf。
+`mlp + tf-idf`，在20个类别18846篇文档上的`acc=0.807427`。
 
 ##### 6.1.2 [`mlp_classifier_lda.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.classification/mlp_classifier_lda.py)
 
-mlp + tf-idf + lda。
+`mlp + tf-idf + lda`，在20个类别18846篇文档上的`acc=0.807162`。
