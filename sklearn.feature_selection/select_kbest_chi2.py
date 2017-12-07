@@ -63,7 +63,7 @@ acc = np.sum(y_test == y_pred) / y_test.shape[0]
 print('acc: %f\n\n' % acc)  # 0.817109
 
 
-# 降维前...
+# 特性选择后...
 print('特性选择后...')
 
 # 特征选择
