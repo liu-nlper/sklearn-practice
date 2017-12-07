@@ -2,4 +2,4 @@
 
 ### 1. K-Means
 
-[`kmeans.py`]()，`K-Means`在文本聚类上的使用。
+[`kmeans.py`](https://github.com/liu-nlper/sklearn-practice/blob/master/sklearn.clustering/kmeans.py)，`K-Means`在文本聚类上的使用。
