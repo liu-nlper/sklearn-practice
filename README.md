@@ -18,3 +18,6 @@ sklearn学习，持续更新...
 
 ## 6. 分类算法
 [`sklearn.classification`](https://github.com/liu-nlper/sklearn-practice/tree/master/sklearn.classification)，分类算法在文本分类任务上的使用。
+
+## 7. 聚类算法
+[`sklearn.clustering`](https://github.com/liu-nlper/sklearn-practice/tree/master/sklearn.clustering)，聚类算法的使用。
